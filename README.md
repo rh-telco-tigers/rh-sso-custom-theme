@@ -42,7 +42,7 @@ In this repo, we have some sample files to create custom login theme. The change
       ```
       ![image](https://github.com/user-attachments/assets/77d55d5d-5e4b-4f91-8c15-2851c5d00910)
 
-### New Login Page looks like with new field 'appId'
+### New Login Page looks like below with new field 'appId'
 
 ![image](https://github.com/user-attachments/assets/32a62023-8a17-4b4f-8f3c-b8f8109e239b)
 
