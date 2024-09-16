@@ -1,22 +1,22 @@
 # Steps to configure custom theme in RedHat Single Sign On
 
-Below are steps to add custom field to an existing and using JavaScript to process data in login form
+Below are steps to create custom theme from an existing theme shipped with Product like adding custom field to an existing login form and using JavaScript to process data in login form.
 
 Here is the official documentation to create necessary artifications to create and load custom theme : https://docs.redhat.com/en/documentation/red_hat_single_sign-on/7.6/html/server_developer_guide/themes#creating_a_theme
 
-In this repo, we have some sample files to create custom login theme.
+In this repo, we have some sample files to create custom login theme. The changes in files are already done, but will walk through on the steps.
 
 1) Checkout the repo and copy ```peru-login``` folder into themes folder
 
-2) In theme.properties file, you mention the javascript file reference and the CSS used.
+2) Create the resources/js/script.js file inside themes/login folder.
 
-3) Create the resources/js/script.js file inside themes/login folder.
+3) In theme.properties file, you mention the javascript file reference and the CSS used.
 
-4) Copy an existing ```login.ftl``` file from other themes like base. Add below code after import element ion starting of document.
+4) Copy an existing ```login.ftl``` file from other themes like base. Add below code after import element in the starting of document.
     - Add custom HTML code ```<h1>HELLO WORLD!</h1>```
     - Refer to JavaScript
       ```<script type="text/javascript" src="resources/js/script.js"></script>```
-    - Add below code to modify the default login page to add new elements
+    - Add below code to modify the default login page to add new form input elements
                
                <div class="${properties.kcFormGroupClass!}">
                     <label for="appId" class="${properties.kcLabelClass!}">${msg("appId")}</label>
