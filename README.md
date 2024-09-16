@@ -1,0 +1,1 @@
+# rh-sso-custom-theme
